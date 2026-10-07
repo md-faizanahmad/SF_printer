@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>
@@ -14,134 +15,659 @@
 
     <meta name="robots" content="index, follow" />
 
+    <meta name="author" content="Printer Mitra" />
+
     <link rel="canonical" href="https://yourdomain.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Printer Mitra | Konica Minolta Printer Sales & Service in Patna" />
+
+    <meta property="og:description"
+        content="Konica Minolta printer sales, repair, installation and maintenance services in Patna, Bihar." />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="https://yourdomain.com/" />
+
+    <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- Tailwind -->
     <link rel="stylesheet" href="/output.css" />
 </head>
 
-<body>
-    <header>
-        <nav aria-label="Main navigation">
-            <!-- Navigation -->
+<body class="bg-white text-gray-900 antialiased">
+    <!-- ================================
+         HEADER
+    ================================= -->
+    <header class="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+            <!-- Logo -->
+            <a href="#hero" class="text-xl font-bold tracking-tight" aria-label="Printer Mitra home">
+                Printer Mitra
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="#about" class="text-sm font-medium text-gray-600 transition hover:text-black">
+                    About
+                </a>
+
+                <a href="#services" class="text-sm font-medium text-gray-600 transition hover:text-black">
+                    Services
+                </a>
+
+                <a href="#work" class="text-sm font-medium text-gray-600 transition hover:text-black">
+                    Our Work
+                </a>
+
+                <a href="#contact"
+                    class="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white transition hover:bg-gray-800">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button type="button" id="menu-button" class="rounded-lg p-2 text-gray-700 md:hidden"
+                aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </nav>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden border-t border-gray-200 bg-white md:hidden">
+            <div class="flex flex-col px-5 py-4">
+                <a href="#about" class="border-b border-gray-100 py-3 text-sm font-medium">
+                    About
+                </a>
+
+                <a href="#services" class="border-b border-gray-100 py-3 text-sm font-medium">
+                    Services
+                </a>
+
+                <a href="#work" class="border-b border-gray-100 py-3 text-sm font-medium">
+                    Our Work
+                </a>
+
+                <a href="#why-us" class="border-b border-gray-100 py-3 text-sm font-medium">
+                    Why Us
+                </a>
+
+                <a href="#contact" class="py-3 text-sm font-medium">
+                    Contact
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <!-- Hero -->
-        <section id="hero" aria-labelledby="hero-title">
-            <h1>Konica Minolta Printer Sales & Service in Patna</h1>
+        <!-- ================================
+           HERO
+      ================================= -->
+        <section id="hero" aria-labelledby="hero-title" class="border-b border-gray-200">
+            <div
+                class="mx-auto grid min-h-[680px] max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
+                <div>
+                    <p class="mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                        Printer Sales & Service
+                    </p>
 
-            <p>
-                Professional printer sales, repair, installation and maintenance
-                services for businesses, offices and institutions.
-            </p>
+                    <h1 id="hero-title"
+                        class="max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+                        Konica Minolta Printer Sales & Service in Patna
+                    </h1>
 
-            <div>
-                <a href="#contact">Contact Us</a>
-                <a href="tel:+91XXXXXXXXXX">Call Now</a>
+                    <p class="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+                        Professional printer sales, repair, installation and maintenance
+                        services for businesses, offices and institutions.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                        <a href="#contact"
+                            class="inline-flex items-center justify-center rounded-full bg-black px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-gray-800">
+                            Contact Us
+                        </a>
+
+                        <a href="tel:+91XXXXXXXXXX"
+                            class="inline-flex items-center justify-center rounded-full border border-gray-300 px-7 py-3.5 text-sm font-semibold transition hover:border-black hover:bg-gray-50">
+                            Call Now
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-gray-500">
+                        <span>Konica Minolta Specialist</span>
+                        <span>•</span>
+                        <span>Patna, Bihar</span>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="flex min-h-[360px] items-center justify-center rounded-3xl bg-gray-100 p-8">
+                    <div class="text-center">
+                        <div class="mx-auto flex h-28 w-28 items-center justify-center rounded-2xl bg-white shadow-sm">
+                            <svg class="h-14 w-14 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6v-7Z" />
+                            </svg>
+                        </div>
+
+                        <p class="mt-6 text-sm font-medium text-gray-600">
+                            Professional Printer Solutions
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About -->
-        <section id="about" aria-labelledby="about-title">
-            <h2 id="about-title">About Printer Mitra</h2>
+        <!-- ================================
+           ABOUT
+      ================================= -->
+        <section id="about" aria-labelledby="about-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            About Us
+                        </p>
 
-            <p>
-                Printer Mitra provides reliable Konica Minolta printer sales,
-                servicing, repair and maintenance in Patna, Bihar.
-            </p>
+                        <h2 id="about-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Reliable printer expertise for your business
+                        </h2>
+                    </div>
+
+                    <div class="space-y-6 text-lg leading-8 text-gray-600">
+                        <p>
+                            Printer Mitra provides reliable Konica Minolta printer sales,
+                            servicing, repair and maintenance in Patna, Bihar.
+                        </p>
+
+                        <p>
+                            We help businesses, offices and institutions keep their
+                            printing operations running smoothly with professional
+                            installation, troubleshooting and maintenance services.
+                        </p>
+
+                        <p>
+                            Our focus is simple: dependable printer solutions, practical
+                            technical support and professional service.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Services -->
-        <section id="services" aria-labelledby="services-title">
-            <h2 id="services-title">Our Services</h2>
+        <!-- ================================
+           SERVICES
+      ================================= -->
+        <section id="services" aria-labelledby="services-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="max-w-2xl">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                        What We Do
+                    </p>
 
-            <article>
-                <h3>Printer Repair</h3>
-                <p>
-                    Professional troubleshooting and repair services for Konica Minolta
-                    printers and multifunction devices.
-                </p>
-            </article>
+                    <h2 id="services-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                        Printer services built around reliability
+                    </h2>
 
-            <article>
-                <h3>Printer Maintenance</h3>
-                <p>
-                    Regular maintenance to keep your printer reliable and reduce
-                    unexpected downtime.
-                </p>
-            </article>
+                    <p class="mt-5 text-lg leading-8 text-gray-600">
+                        From printer sales and installation to repair and maintenance,
+                        Printer Mitra provides practical solutions for everyday business
+                        printing needs.
+                    </p>
+                </div>
 
-            <article>
-                <h3>Printer Installation</h3>
-                <p>
-                    Printer installation, configuration and setup for offices and
-                    businesses.
-                </p>
-            </article>
+                <div
+                    class="mt-14 grid gap-px overflow-hidden rounded-2xl border border-gray-200 bg-gray-200 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Service 1 -->
+                    <article class="bg-white p-8">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                            <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.7"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m10.5 20.5 9-9a2.12 2.12 0 0 0 0-3l-4-4a2.12 2.12 0 0 0-3 0l-9 9a2.12 2.12 0 0 0 0 3l4 4a2.12 2.12 0 0 0 3 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m13 6 5 5" />
+                            </svg>
+                        </div>
 
-            <article>
-                <h3>Printer Sales</h3>
-                <p>
-                    Konica Minolta printer and multifunction printer sales for business
-                    and office requirements.
-                </p>
-            </article>
+                        <h3 class="mt-6 text-lg font-semibold">
+                            Printer Repair
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            Professional troubleshooting and repair services for Konica
+                            Minolta printers and multifunction devices.
+                        </p>
+                    </article>
+
+                    <!-- Service 2 -->
+                    <article class="bg-white p-8">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                            <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.7"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 3v3M12 18v3M3 12h3M18 12h3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M18.36 5.64l-2.12 2.12M7.76 16.24l-2.12 2.12" />
+                                <circle cx="12" cy="12" r="3.5" />
+                            </svg>
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-semibold">
+                            Printer Maintenance
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            Regular maintenance to keep your printer reliable and reduce
+                            unexpected downtime.
+                        </p>
+                    </article>
+
+                    <!-- Service 3 -->
+                    <article class="bg-white p-8">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                            <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.7"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18" />
+                                <circle cx="12" cy="12" r="9" />
+                            </svg>
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-semibold">
+                            Printer Installation
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            Printer installation, configuration and setup for offices and
+                            businesses.
+                        </p>
+                    </article>
+
+                    <!-- Service 4 -->
+                    <article class="bg-white p-8">
+                        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
+                            <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="1.7"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6v-7Z" />
+                            </svg>
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-semibold">
+                            Printer Sales
+                        </h3>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-600">
+                            Konica Minolta printer and multifunction printer sales for
+                            business and office requirements.
+                        </p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <!-- Work -->
-        <section id="work" aria-labelledby="work-title">
-            <h2 id="work-title">Our Work</h2>
+        <!-- ================================
+           PRODUCTS
+      ================================= -->
+        <section id="products" aria-labelledby="products-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            Printer Solutions
+                        </p>
 
-            <p>
-                Explore some of our printer installation, repair and service work.
-            </p>
+                        <h2 id="products-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Konica Minolta printers for business needs
+                        </h2>
+
+                        <p class="mt-6 text-lg leading-8 text-gray-600">
+                            Looking for a reliable printer or multifunction device for
+                            your office? We provide Konica Minolta printer sales and can
+                            help with installation and setup.
+                        </p>
+
+                        <a href="#contact"
+                            class="mt-8 inline-flex rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+                            Enquire About a Printer
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-2xl bg-gray-100 p-8">
+                            <p class="text-3xl font-bold">01</p>
+                            <p class="mt-3 text-sm font-medium text-gray-600">
+                                Printer Sales
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-gray-100 p-8">
+                            <p class="text-3xl font-bold">02</p>
+                            <p class="mt-3 text-sm font-medium text-gray-600">
+                                Installation
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-gray-100 p-8">
+                            <p class="text-3xl font-bold">03</p>
+                            <p class="mt-3 text-sm font-medium text-gray-600">
+                                Technical Support
+                            </p>
+                        </div>
+
+                        <div class="rounded-2xl bg-gray-100 p-8">
+                            <p class="text-3xl font-bold">04</p>
+                            <p class="mt-3 text-sm font-medium text-gray-600">
+                                Maintenance
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Why Choose Us -->
-        <section id="why-us" aria-labelledby="why-us-title">
-            <h2 id="why-us-title">Why Choose Printer Mitra?</h2>
+        <!-- ================================
+           WORK
+      ================================= -->
+        <section id="work" aria-labelledby="work-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+                    <div class="max-w-2xl">
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            Our Work
+                        </p>
 
-            <ul>
-                <li>Experienced printer service</li>
-                <li>Konica Minolta expertise</li>
-                <li>Reliable maintenance and repair</li>
-                <li>Professional installation</li>
-                <li>Service in Patna and nearby areas</li>
-            </ul>
+                        <h2 id="work-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Service and installation work
+                        </h2>
+
+                        <p class="mt-5 text-lg leading-8 text-gray-600">
+                            A look at some of the printer installation, repair and
+                            maintenance work completed for customers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                    <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100">
+                        <img src="/images/work-1.jpg" alt="Konica Minolta printer service work in Patna"
+                            class="h-full w-full object-cover" loading="lazy" />
+                    </figure>
+
+                    <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100">
+                        <img src="/images/work-2.jpg" alt="Konica Minolta printer installation service"
+                            class="h-full w-full object-cover" loading="lazy" />
+                    </figure>
+
+                    <figure class="aspect-[4/3] overflow-hidden rounded-2xl bg-gray-100">
+                        <img src="/images/work-3.jpg" alt="Printer repair and maintenance service"
+                            class="h-full w-full object-cover" loading="lazy" />
+                    </figure>
+                </div>
+            </div>
         </section>
 
-        <!-- Service Areas -->
-        <section id="service-areas" aria-labelledby="service-areas-title">
-            <h2 id="service-areas-title">Service Areas</h2>
+        <!-- ================================
+           WHY US
+      ================================= -->
+        <section id="why-us" aria-labelledby="why-us-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="grid gap-12 lg:grid-cols-2">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            Why Printer Mitra
+                        </p>
 
-            <p>
-                Printer Mitra provides printer sales and service in Patna, Bihar and
-                surrounding areas.
-            </p>
+                        <h2 id="why-us-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Practical service. Reliable support.
+                        </h2>
+                    </div>
+
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span
+                                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black text-sm text-white">
+                                ✓
+                            </span>
+
+                            <div>
+                                <h3 class="font-semibold">
+                                    Konica Minolta expertise
+                                </h3>
+
+                                <p class="mt-1 text-sm leading-6 text-gray-600">
+                                    Focused technical knowledge for Konica Minolta printers and
+                                    multifunction devices.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <span
+                                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black text-sm text-white">
+                                ✓
+                            </span>
+
+                            <div>
+                                <h3 class="font-semibold">
+                                    Reliable maintenance
+                                </h3>
+
+                                <p class="mt-1 text-sm leading-6 text-gray-600">
+                                    Regular servicing designed to keep your printing equipment
+                                    working reliably.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <span
+                                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black text-sm text-white">
+                                ✓
+                            </span>
+
+                            <div>
+                                <h3 class="font-semibold">
+                                    Business-focused solutions
+                                </h3>
+
+                                <p class="mt-1 text-sm leading-6 text-gray-600">
+                                    Printer solutions suited to offices, businesses and
+                                    institutions.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="flex gap-4">
+                            <span
+                                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-black text-sm text-white">
+                                ✓
+                            </span>
+
+                            <div>
+                                <h3 class="font-semibold">
+                                    Local service in Patna
+                                </h3>
+
+                                <p class="mt-1 text-sm leading-6 text-gray-600">
+                                    Local printer sales and technical service for customers in
+                                    Patna and nearby areas.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <!-- Contact -->
+        <!-- ================================
+           SERVICE AREAS
+      ================================= -->
+        <section id="service-areas" aria-labelledby="service-areas-title" class="border-b border-gray-200">
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                        Service Areas
+                    </p>
+
+                    <h2 id="service-areas-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                        Printer service in Patna and nearby areas
+                    </h2>
+
+                    <p class="mt-5 text-lg leading-8 text-gray-600">
+                        Printer Mitra provides printer sales, repair, installation and
+                        maintenance services across Patna and surrounding areas in
+                        Bihar.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap justify-center gap-3">
+                        <span class="rounded-full border border-gray-200 px-5 py-2 text-sm text-gray-600">
+                            Patna
+                        </span>
+
+                        <span class="rounded-full border border-gray-200 px-5 py-2 text-sm text-gray-600">
+                            Phulwari Sharif
+                        </span>
+
+                        <span class="rounded-full border border-gray-200 px-5 py-2 text-sm text-gray-600">
+                            Bihar
+                        </span>
+
+                        <span class="rounded-full border border-gray-200 px-5 py-2 text-sm text-gray-600">
+                            Nearby Areas
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+           CTA
+      ================================= -->
+        <section class="bg-black text-white">
+            <div class="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+                <div class="flex flex-col justify-between gap-8 md:flex-row md:items-center">
+                    <div class="max-w-2xl">
+                        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                            Need printer repair or service?
+                        </h2>
+
+                        <p class="mt-4 text-lg leading-8 text-gray-300">
+                            Get in touch with Printer Mitra for Konica Minolta printer
+                            sales, repair, installation and maintenance.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col gap-3 sm:flex-row">
+                        <a href="tel:+91XXXXXXXXXX"
+                            class="inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition hover:bg-gray-200">
+                            Call Now
+                        </a>
+
+                        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center rounded-full border border-gray-600 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white">
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================
+           CONTACT
+      ================================= -->
         <section id="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Contact Printer Mitra</h2>
+            <div class="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+                <div class="grid gap-14 lg:grid-cols-2">
+                    <div>
+                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-500">
+                            Contact
+                        </p>
 
-            <address>
-                Patna, Bihar, India
-            </address>
+                        <h2 id="contact-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                            Let's discuss your printer requirements
+                        </h2>
 
-            <p>
-                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
-            </p>
+                        <p class="mt-5 max-w-xl text-lg leading-8 text-gray-600">
+                            Contact Printer Mitra for printer sales, repair, maintenance,
+                            installation or technical support in Patna.
+                        </p>
+                    </div>
 
-            <p>
-                <a href="mailto:example@email.com">example@email.com</a>
-            </p>
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">
+                                Location
+                            </p>
+
+                            <address class="mt-2 not-italic text-lg font-medium">
+                                Patna, Bihar, India
+                            </address>
+                        </div>
+
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">
+                                Phone
+                            </p>
+
+                            <a href="tel:+91XXXXXXXXXX" class="mt-2 block text-lg font-medium hover:underline">
+                                +91 XXXXX XXXXX
+                            </a>
+                        </div>
+
+                        <div>
+                            <p class="text-sm font-medium text-gray-500">
+                                Email
+                            </p>
+
+                            <a href="mailto:example@email.com" class="mt-2 block text-lg font-medium hover:underline">
+                                example@email.com
+                            </a>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3">
+                            <a href="tel:+91XXXXXXXXXX"
+                                class="inline-flex rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-gray-800">
+                                Call Printer Mitra
+                            </a>
+
+                            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex rounded-full border border-gray-300 px-6 py-3 text-sm font-semibold transition hover:border-black">
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Printer Mitra. All rights reserved.</p>
+    <!-- ================================
+         FOOTER
+    ================================= -->
+    <footer class="border-t border-gray-200">
+        <div
+            class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+            <div>
+                <p class="font-semibold">Printer Mitra</p>
+
+                <p class="mt-1 text-sm text-gray-500">
+                    Konica Minolta Printer Sales & Service in Patna
+                </p>
+            </div>
+
+            <p class="text-sm text-gray-500">
+                &copy; 2026 Printer Mitra. All rights reserved.
+            </p>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
     <script src="/src/js/main.js" defer></script>
 </body>
 
