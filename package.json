@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./public/output.css --watch",
+    "dev": "concurrently \"npx @tailwindcss/cli -i ./src/css/input.css -o ./public/output.css --watch\" \"live-server .\"",
     "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./public/output.css --minify"
   },
   "keywords": [],
@@ -13,5 +13,9 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4",
+    "live-server": "^1.2.2"
   }
 }
